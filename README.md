@@ -11,3 +11,15 @@
     DB_HOST=localhost и PORT=5000 должны быть с такими значениями, иначе поменяйте прокси в client/next.config.mjs 
     8. после заполнения можно прописывать npm run db и npm run start, PostgreSQL должна быть установлена.
 
+
+#### Существующие юзеры для теста прав доступа на сервере должно все быть настроено (npm run db)
+
+       1. email: "text@example.com",
+        password: await bcrypt.hash("123", 10),
+        role: 'textEditor',
+     
+       2. email: "link@example.com",
+        password: await bcrypt.hash("123", 10),
+        role: 'linkEditor',
+       
+
